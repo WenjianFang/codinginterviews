@@ -1,0 +1,31 @@
+
+public class Solution {
+	public String replaceSpace(StringBuffer str){
+		
+		//if(str.length()==0) return str.toString();
+		int blankNum = 0;
+		for(int i=0; i<str.length(); i++){
+			if(str.charAt(i)==' ') blankNum++;
+		}
+		
+		int indexOfOriginal=str.length();
+		int indexOfNew=str.length()+blankNum*2;
+		str.setLength(indexOfNew+1);
+		
+		while((indexOfOriginal>=0)&&(indexOfOriginal<indexOfNew)){
+			if(str.charAt(indexOfOriginal)==' '){
+				str.setCharAt(indexOfNew--, '0');
+				str.setCharAt(indexOfNew--, '2');
+				str.setCharAt(indexOfNew--, '%');
+			}
+			else{
+				str.setCharAt(indexOfNew, str.charAt(indexOfOriginal));
+				indexOfNew--;
+			}
+			indexOfOriginal--;
+		}
+//		System.out.print(str.toString());
+		str.append("aaaaaaaaaaaa");
+		return str.toString();
+	}
+}

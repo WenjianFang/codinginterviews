@@ -1,0 +1,6 @@
+
+public class Solution {
+	public boolean Find(int[][] array, int target){
+		return true;
+	}
+}
