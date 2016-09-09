@@ -1,0 +1,18 @@
+
+public class Main {
+	public static void main(String[] args){
+		int[] preOrder = {1,2};
+		int[] inOrder = {2,1};
+		
+		BTNode root = new Solution().construct(preOrder, inOrder);
+		
+		traverseBTreePreOrder(root);
+	}
+	private static void traverseBTreePreOrder(BTNode root){
+		if(root==null) return;
+		System.out.print(root.val+' ');
+		traverseBTreePreOrder(root.leftChild);
+		
+		traverseBTreePreOrder(root.rightChild);
+	}
+}

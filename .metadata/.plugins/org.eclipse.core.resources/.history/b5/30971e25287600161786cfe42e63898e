@@ -1,0 +1,12 @@
+
+public class Solution {
+	public BTNode construct(int[] preOrder, int[] inOrder){
+		if((preOrder.length==0)||(inOrder.length==0)) return null;
+		
+		BTNode root = new BTNode();
+		root.val = preOrder[0];
+		root.leftChild=null;
+		root.rightChild=null;
+		constructRecu(preOrder, inOrder, 0, preOrder.length-1, 0, inOrder.length-1);
+	}
+}

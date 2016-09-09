@@ -1,0 +1,6 @@
+
+public class Solution {
+	public BTNode construct(int[] preOrder, int[] inOrder){
+		if((preOrder.length==0)||(inOrder.length))
+	}
+}
