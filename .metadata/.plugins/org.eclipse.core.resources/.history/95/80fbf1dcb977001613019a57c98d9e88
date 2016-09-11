@@ -1,0 +1,8 @@
+
+public class Solution {
+	public double power(double base, int exponent) {
+		if(equal(base, 0.0)) return 0.0;
+		
+		
+	}
+}
