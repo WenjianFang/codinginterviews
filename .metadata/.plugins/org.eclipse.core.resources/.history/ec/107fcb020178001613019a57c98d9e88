@@ -1,0 +1,6 @@
+
+public class Solution {
+	public ListNode mergeTwoList(ListNode head1, ListNode head2){
+		
+	}
+}
