@@ -1,0 +1,36 @@
+import java.util.*;
+
+
+/*
+ * use another stack to store current minimum number
+ */
+public class Solution {
+
+	Stack<Integer> originStack = new Stack<>();
+	Stack<Integer> minStack = new Stack<>();
+    int currentMin = Integer.MAX_VALUE;
+    public void push(int node) {
+        this.originStack.push(node);
+        if(node < currentMin){
+        	this.currentMin = node;
+        }
+        this.minStack.push(this.currentMin);
+    }
+    
+    public void pop() {
+        if(this.originStack.empty()) return;
+        this.originStack.pop();
+        this.minStack.pop();
+        this.currentMin = this.min();
+    }
+    
+    public int top() {
+        if(this.originStack.empty()) System.out.println("empty stack");
+        return this.originStack
+        
+    }
+    
+    public int min() {
+        
+    }
+}
