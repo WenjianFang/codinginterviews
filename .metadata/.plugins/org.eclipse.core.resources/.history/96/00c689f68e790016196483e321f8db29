@@ -11,10 +11,10 @@ public class Solution {
     
     public void push(int node) {
         this.originStack.push(node);
-        if(this.minStack.empty()||node < this.minStack.peek()){/*first value, or this node less than current minimum*/
+        if(this.minStack.empty()||node < this.minStack.peek()){
         	this.minStack.push(node);
         }
-        else{/*this node greater than current minimum value, push current minimum value*/
+        else{
         	this.minStack.push(this.minStack.peek());
         }
     }
