@@ -1,0 +1,25 @@
+import java.util.*;
+public class Solution {
+	public boolean isPopOrder(int[] pushA,int[] popA) {
+		if(pushA.length==0 || popA.length == 0) return false;/*null, return false or true?*/
+		Stack<Integer> stack = new Stack<>();/**/
+		int pushi=0;
+		int popi = 0;
+		for(popi=0; popi<popA.length; popi++){
+			if((!stack.empty())&&(popA[popi]==stack.peek())){
+				stack.pop();
+			}
+			else{
+				while((pushi<pushA.length)&&(pushA[pushi] != popA[popi])){
+					stack.push(pushA[pushi]);
+					pushi++;
+				}
+				if((pushi<pushA.length)&&(pushA[pushi] == popA[popi])) pushi++;
+			}
+			
+		}
+		if((pushi==pushA.length)&&(!stack.empty())) return false;
+		return true;
+		
+    }
+}
