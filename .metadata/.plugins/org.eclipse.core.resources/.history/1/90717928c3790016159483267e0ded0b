@@ -1,0 +1,6 @@
+
+public class Solution {
+	public boolean verifySquenceOfBST(int[] sequence) {
+		
+    }
+}

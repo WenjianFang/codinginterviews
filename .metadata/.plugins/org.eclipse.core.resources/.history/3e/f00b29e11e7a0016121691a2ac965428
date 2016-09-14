@@ -1,0 +1,7 @@
+
+public class Solution {
+	public boolean verifySquenceOfBST(int[] sequence) {
+		if(sequence.length==0) return false;
+		
+    }
+}
