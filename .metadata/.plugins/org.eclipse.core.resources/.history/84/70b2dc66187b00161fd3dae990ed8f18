@@ -1,0 +1,48 @@
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] array = {2,3,4,6,7,8};
+		RandomListNode pHead = createComplexList(array);
+		traverseList(pHead);
+		new Solution().Clone(pHead);
+		
+	}
+	private static RandomListNode createComplexList(int[] array){
+		if(array.length == 0) return null;
+		RandomListNode head = new RandomListNode(array[0]);
+		head.next = null;
+		head.random = null;
+		RandomListNode p = head;
+		for(int i=1; i<array.length; i++){
+			RandomListNode newNode = new RandomListNode(array[i]);
+			newNode.next = null;
+			newNode.random = null;
+			p.next = newNode;
+			p = p.next;
+		}
+		p = head;
+		RandomListNode rp = head.next;
+		while(rp != null){
+			rp = rp.next;
+			p.random = rp;
+			p = p.next;
+			//rp = rp.next;
+		}
+		return head;
+	}
+	
+	public static void traverseList(RandomListNode pHead){
+		while(pHead != null){
+			System.out.print(pHead.label);
+			if(pHead.random != null) System.out.print("(->" + pHead.random.label + ")");
+			System.out.print("->");
+			pHead = pHead.next;
+		}
+		System.out.println("null");
+	}
+}
