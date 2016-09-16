@@ -1,0 +1,27 @@
+
+import java.util.*;
+public class Solution {
+	public String transToMinNum(int[] array){
+		if(array.length==0) return null;
+		String[] strs = new String[array.length];
+		for(int i=0; i<array.length; i++){
+			strs[i] = Integer.toString(array[i]);
+		}
+		Collections.sort(strs, );
+	}
+	
+	class compareStr implements Comparator<String>{
+
+		@Override
+		public int compare(String o1, String o2) {
+			// TODO Auto-generated method stub
+			String newStr1 = o1.concat(o2);
+			String newStr2 = o2.concat(o1);
+			
+			return newStr1.compareTo(newStr2);
+		}
+
+
+		
+	}
+}
