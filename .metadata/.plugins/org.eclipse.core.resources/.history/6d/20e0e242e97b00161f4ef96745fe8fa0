@@ -1,0 +1,7 @@
+/*
+ * with partition in quick sort or
+ * with an set to store current least numbers
+ */
+public class Solution {
+
+}
