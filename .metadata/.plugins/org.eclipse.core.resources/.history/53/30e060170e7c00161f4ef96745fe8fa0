@@ -1,0 +1,23 @@
+/*
+ * from 0->n
+ * if occur num<0, keep largest sum, if current sum<0, restart
+ * else just keep going
+ */
+public class Solution {
+	public int findGreatestSumOfSubArray(int[] array){
+		if(array.length==0) return 0; 
+		
+		int sum = 0;
+		int maxSum = sum;
+		
+		for(int i=0; i<array.length; i++){
+			if(array[i]<0){
+				if(sum > maxSum) maxSum = sum;
+				if(sum+array[i]<0) sum = 0;
+			}
+			else
+				sum = sum+array[i];
+		}
+		return maxSum;
+	}
+}
