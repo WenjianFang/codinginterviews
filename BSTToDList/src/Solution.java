@@ -1,4 +1,8 @@
-
+/*
+ * recursively solve the problem
+ * every recursively return list's end
+ * connect the leftList, root and rightList
+ */
 public class Solution {
 	public TreeNode binarySearchTreeToDList(TreeNode root){
 		if(root == null) return null;

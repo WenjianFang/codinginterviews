@@ -1,0 +1,46 @@
+/*
+ * recursively solve the problem
+ */
+import java.util.*;
+public class Solution {
+	public ArrayList<String> permulationOfString(String str){
+		ArrayList<String> result = new ArrayList<>();
+		
+		char[] charStr = str.toCharArray();
+		
+		if(charStr.length == 0) return result;
+		if(charStr.length==1){
+			result.add(charStr.toString());
+			return result;
+		}
+		
+		permulationOfStringRecu(result, charStr,0, null);
+		return result;
+	} 
+	
+	private void permulationOfStringRecu(ArrayList<String> result, char[] charStr, int start, ArrayList<Character> pStr){
+		if(charStr.length==0) return;
+//		ArrayList<Character> oneStr = new ArrayList<>();
+//		if(pStr != null) oneStr.addAll(pStr);
+//		if(start==charStr.length-1){
+//			oneStr.add(charStr[start]);
+//			result.add(oneStr.toString());
+//			return;
+//		}
+		for(int i=start; i<charStr.length; i++){
+			char ch = charStr[i];
+			charStr[i]=charStr[start];
+			charStr[start] = ch;
+			ArrayList<Character> oneStr = new ArrayList<>();
+			if(pStr != null) oneStr.addAll(pStr);
+			if(start==charStr.length-1){
+				oneStr.add(charStr[start]);
+				result.add(oneStr.toString());
+				return;
+			}
+			oneStr.add(charStr[start]);
+			permulationOfStringRecu(result, charStr, start+1, oneStr);
+		}
+		return;
+	}
+}

@@ -1,0 +1,21 @@
+/*
+ * recursively solve the problem
+ */
+import java.util.*;
+public class Solution {
+	public ArrayList<String> permulationOfString(String str){
+		ArrayList<String> result = new ArrayList<>();
+		
+		if(str.isEmpty()) return result;
+		if(str.length()==1){
+			result.add(str);
+			return result;
+		}
+		
+		permulationOfStringRecu(result, str);
+	} 
+	
+	private void permulationOfStringRecu(ArrayList<String> result, String str){
+		
+	}
+}

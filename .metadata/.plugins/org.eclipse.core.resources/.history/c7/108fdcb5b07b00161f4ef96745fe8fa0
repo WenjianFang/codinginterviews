@@ -1,0 +1,28 @@
+/*
+ * recursively solve the problem
+ */
+import java.util.*;
+public class Solution {
+	public ArrayList<String> permulationOfString(String str){
+		ArrayList<String> result = new ArrayList<>();
+		char[] charStr = str.toCharArray();
+		if(str.isEmpty()) return result;
+		if(str.length()==1){
+			result.add(str);
+			return result;
+		}
+		
+		permulationOfStringRecu(result, str, null);
+		return result;
+	} 
+	
+	private void permulationOfStringRecu(ArrayList<String> result, String str, String pStr){
+		if(str.length()==0) return;
+		String oneStr = new String();
+		if(pStr != null) oneStr = pStr.substring(0);
+		for(int i=0; i<str.length(); i++){
+			char ch = str.charAt(i);
+			String newStr = str.concat(oneStr)
+		}
+	}
+}

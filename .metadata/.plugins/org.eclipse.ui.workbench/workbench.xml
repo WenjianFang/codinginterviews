@@ -31,18 +31,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" partName="Solution.java" path="/home/wenjian/codinginterviews/FindPathInBinaryTree/src/Solution.java" title="Solution.java" tooltip="FindPathInBinaryTree/src/Solution.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FindPathInBinaryTree/src/Solution.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1596" selectionTopPixel="727"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/wenjian/codinginterviews/FindPathInBinaryTree/src/Main.java" title="Main.java" tooltip="FindPathInBinaryTree/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FindPathInBinaryTree/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="304" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" partName="Solution.java" path="/home/wenjian/codinginterviews/PermutationOfString/src/Solution.java" title="Solution.java" tooltip="PermutationOfString/src/Solution.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PermutationOfString/src/Solution.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="331" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -56,7 +51,6 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="384" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
@@ -242,7 +236,6 @@
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
@@ -250,6 +243,11 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="org.eclipse.debug.ui.DebugView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@a619114" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29867986"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -281,7 +279,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19245283" ratioLeft="255" ratioRight="1070" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.747927" ratioLeft="451" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -301,11 +299,9 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@a619114" ratio="0.7491749" ratioLeft="454" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -432,158 +428,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FindPathInBinaryTree/src/Solution.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FindPathInBinaryTree/src/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CloneComplexList/src/Solution.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CloneComplexList/src/RandomListNode.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/CloneComplexList/src/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BSTToDList/src/Solution.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BSTToDList/src/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PermutationOfString/src/Solution.java"/>
 </editors>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1662" y="0"/>
+<item historyLabel="RandomListNode.java" index="1">
+<position info="not_deleted" x="1" y="0"/>
 </item>
 <item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1284" y="0"/>
+<position info="not_deleted" x="182" y="0"/>
+</item>
+<item historyLabel="Main.java" index="2">
+<position/>
+</item>
+<item historyLabel="RandomListNode.java" index="1">
+<position info="not_deleted" x="1" y="0"/>
+</item>
+<item historyLabel="Main.java" index="2">
+<position/>
+</item>
+<item historyLabel="RandomListNode.java" index="1">
+<position info="not_deleted" x="1" y="0"/>
 </item>
 <item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1539" y="0"/>
+<position info="not_deleted" x="182" y="0"/>
 </item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1283" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1284" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1539" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1567" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1568" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1736" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1803" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1284" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1358" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1406" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
+<item historyLabel="Main.java" index="2">
 <position/>
 </item>
 <item historyLabel="Solution.java" index="0">
+<position info="not_deleted" x="1727" y="0"/>
+</item>
+<item historyLabel="RandomListNode.java" index="1">
+<position info="not_deleted" x="1" y="0"/>
+</item>
+<item historyLabel="Main.java" index="2">
 <position/>
 </item>
 <item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
+<position info="not_deleted" x="410" y="0"/>
 </item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1284" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1736" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1284" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1358" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1406" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1897" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1736" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1283" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1116" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="997" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1169" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1538" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="591" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1119" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1890" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="273" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1890" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
+<item historyLabel="Main.java" index="2">
 <position/>
 </item>
 <item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="0" y="1905"/>
+<position info="not_deleted" x="1497" y="0"/>
 </item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="279" y="0"/>
-</item>
-<item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1581" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="123" y="0"/>
+<item historyLabel="Main.java" index="2">
+<position/>
 </item>
 <item historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1581" y="0"/>
+<position info="not_deleted" x="1606" y="0"/>
 </item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="304" y="0"/>
+<item historyLabel="Main.java" index="2">
+<position/>
 </item>
-<item active="true" historyLabel="Solution.java" index="0">
-<position info="not_deleted" x="1581" y="0"/>
+<item historyLabel="Main.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="208" y="4"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="468" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="99" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="3">
+<position info="not_deleted" x="0" y="1251"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="39" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="336" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="186" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="332" y="0"/>
+</item>
+<item active="true" historyLabel="Solution.java" index="5">
+<position info="not_deleted" x="269" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -602,10 +602,29 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@a619114"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="PermutationOfString/src/Solution.java">
+<persistable path="/PermutationOfString/src/Solution.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="BSTToDList/src/Solution.java">
+<persistable path="/BSTToDList/src/Solution.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="BSTToDList/src/Main.java">
+<persistable path="/BSTToDList/src/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="CloneComplexList/src/Main.java">
+<persistable path="/CloneComplexList/src/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RandomListNode.java" tooltip="CloneComplexList/src/RandomListNode.java">
+<persistable path="/CloneComplexList/src/RandomListNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="CloneComplexList/src/Solution.java">
+<persistable path="/CloneComplexList/src/Solution.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="FindPathInBinaryTree/src/Main.java">
 <persistable path="/FindPathInBinaryTree/src/Main.java"/>
 </file>
@@ -632,24 +651,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="StackPopOrder/src/Solution.java">
 <persistable path="/StackPopOrder/src/Solution.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="MinInStack/src/Main.java">
-<persistable path="/MinInStack/src/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="MinInStack/src/Solution.java">
-<persistable path="/MinInStack/src/Solution.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="PrintMatrixClockWise/src/Main.java">
-<persistable path="/PrintMatrixClockWise/src/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Solution.java" tooltip="PrintMatrixClockWise/src/Solution.java">
-<persistable path="/PrintMatrixClockWise/src/Solution.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="BinaryTreeMirror/src/Main.java">
-<persistable path="/BinaryTreeMirror/src/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TreeNode.java" tooltip="BinaryTreeMirror/src/TreeNode.java">
-<persistable path="/BinaryTreeMirror/src/TreeNode.java"/>
 </file>
 </mruList>
 </workbench>

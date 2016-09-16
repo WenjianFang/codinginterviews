@@ -1,0 +1,29 @@
+/*
+ * recursively solve the problem
+ */
+import java.util.*;
+public class Solution {
+	public ArrayList<String> permulationOfString(String str){
+		ArrayList<String> result = new ArrayList<>();
+		char[] charStr = str.toCharArray();
+		
+		if(charStr.length == 0) return result;
+		if(charStr.length==1){
+			result.add(charStr.toString());
+			return result;
+		}
+		
+		permulationOfStringRecu(result, charStr, null);
+		return result;
+	} 
+	
+	private void permulationOfStringRecu(ArrayList<String> result, char[] charStr, char[] pStr){
+		if(charStr.length==0) return;
+		char[] oneStr;;
+		if(pStr != null) oneStr = Arrays.copyOf(pStr, pStr.length);
+		for(int i=0; i<str.length(); i++){
+			char ch = str.charAt(i);
+			String newStr = str.concat(oneStr)
+		}
+	}
+}
