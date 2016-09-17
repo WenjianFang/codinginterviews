@@ -1,0 +1,26 @@
+
+public class Solution {
+	
+	public String reverseWords(String str){
+		StringBuffer sb = new StringBuffer(str);
+		sb = reverseString(sb, 0, sb.length()-1)
+	}
+	
+	
+	
+	private StringBuffer reverseString(StringBuffer str, int start, int end){
+		if(str==null || start>end) return null;
+		if(start==end) return str;
+		
+		while(start<end){
+			/*exchange start and end*/
+			char tmp = str.charAt(start);
+			str.setCharAt(start, str.charAt(end));
+			str.setCharAt(end, tmp);
+			/*move on*/
+			start++;
+			end--;
+		}
+		return str;
+	}
+}
