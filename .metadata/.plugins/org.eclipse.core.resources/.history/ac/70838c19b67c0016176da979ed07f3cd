@@ -1,0 +1,9 @@
+/*
+ * this array is ordered
+ * get this number's first occur
+ * and get this number's last occur
+ * use binary search
+ */
+public class Solution {
+
+}
