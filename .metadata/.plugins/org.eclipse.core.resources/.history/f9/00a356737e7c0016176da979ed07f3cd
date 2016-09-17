@@ -1,0 +1,6 @@
+/*use an array to store the occur times of every char
+ * use char-'0' as index
+ */
+public class Solution {
+
+}
