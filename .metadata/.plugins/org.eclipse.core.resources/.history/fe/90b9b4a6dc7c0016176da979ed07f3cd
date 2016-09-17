@@ -1,0 +1,6 @@
+import java.util.*;
+public class Solution {
+	public ArrayList<ArrayList<Integer>> getContinuousArrayWithSum(int[] array, int sum){
+		
+	}
+}
