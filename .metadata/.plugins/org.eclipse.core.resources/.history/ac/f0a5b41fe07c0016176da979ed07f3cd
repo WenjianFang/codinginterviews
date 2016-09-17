@@ -1,0 +1,13 @@
+/*
+ * start->
+ * <-end
+ * currentSum<sum, start++
+ * currentSum>sum, end--
+ * else return
+ */
+import java.util.*;
+public class Solution {
+	public ArrayList<Integer> getTwoNumbersWithSum(int[] array, int sum){
+		
+	}
+}
