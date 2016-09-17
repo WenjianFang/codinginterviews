@@ -1,0 +1,29 @@
+
+public class Solution {
+	
+	public String reverseLeftString(String str, int n){
+		if(str.equals("")||n>str.length()) return "";/*illegal n or str is null*/
+		
+		StringBuffer sb = new StringBuffer(str);
+		
+		reverseString(sb, 0, n-1);/*reverse left*/
+		reverseString(sb, n, sb.length()-1);/*reverse right*/
+		reverseString(sb, 0, sb.length()-1);/*reverse all*/
+		return sb.toString();
+	}
+	
+	
+	private StringBuffer reverseString(StringBuffer str, int start, int end){
+		if(str == null || start>end) return null;
+		if(start == end) return str;
+		
+		while(start<end){
+			char ch = str.charAt(start);
+			str.setCharAt(start, str.charAt(end));
+			str.setCharAt(end, ch);
+			start++;
+			end--;
+		}
+		return str;
+	}
+}

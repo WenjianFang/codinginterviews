@@ -1,0 +1,15 @@
+
+public class Solution {
+	private StringBuffer reverseString(StringBuffer str, int start, int end){
+		if(str == null || start>end) return null;
+		if(start == end) return str;
+		
+		while(start<end){
+			char ch = str.charAt(start);
+			str.setCharAt(start, str.charAt(end));
+			str.setCharAt(end, ch);
+			start++;
+			end--;
+		}
+	}
+}
