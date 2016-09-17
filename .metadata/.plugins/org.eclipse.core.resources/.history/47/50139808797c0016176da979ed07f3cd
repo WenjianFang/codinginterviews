@@ -1,0 +1,26 @@
+import java.util.*;
+public class Solution {
+	public int getUglyNumber(int index){
+		if(index <= 0) return 0;
+		
+		int[] uglyNumbers = new int[index];
+		uglyNumbers[0] = 1;
+		int uglyIndex = 1;
+		
+		int multiply2 = 0;
+		int multiply3 = 0;
+		int multiply5 = 0;
+		
+		while(uglyIndex < index){
+			int min = min(uglyNumbers[multiply2], uglyNumbers[multiply3], uglyNumbers[multiply5]);
+			uglyNumbers[uglyIndex] = min;
+			
+			while(uglyNumbers[multiply2]*2 <= uglyNumbrs[uglyIndex]) multiply2++;
+		}
+	}
+	private int min(int a, int b, int c){
+		int min = a<b?a:b;
+		min = min<c?min:c;
+		return min;
+	}
+}
