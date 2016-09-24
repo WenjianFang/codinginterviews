@@ -1,0 +1,10 @@
+/*
+ * two string sequence Xn={x0,x1,...xn-1}, Ym={y0,y1,...,ym-1}
+ * longest common subsequence Zk={z0,z1,...zk-1}
+ * xn-1=ym-1=>zk-1=xn-1=ym-1, and Zk-1 is Xn-1 and Ym-1's LCS
+ * or Zk is the Xn-1 and Ym's LCS
+ * or Zk is the Xn and Ym-1's LCS
+ */
+public class Solution {
+	
+}

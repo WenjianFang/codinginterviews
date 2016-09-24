@@ -1,0 +1,16 @@
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 = "afdaffdello";
+		String str2 = "";
+		String lcs = new Solution().getLongestCommonSubsequence(str1, str2);
+		System.out.println(lcs);
+		
+	}
+
+}
