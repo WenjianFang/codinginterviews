@@ -1,0 +1,14 @@
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] array = {2,3,4,5,6,7};
+		ListNode head = new Solution().createList(array);
+		boolean ret = new Solution().isThereExistCircle(head);
+	}
+
+}

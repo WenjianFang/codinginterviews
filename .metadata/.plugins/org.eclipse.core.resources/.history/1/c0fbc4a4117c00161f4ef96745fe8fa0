@@ -1,9 +1,0 @@
-
-public class Solution {
-	public int basicForceCalc(int n){
-		int times = 0;
-		for(int i=1; i<=n; i++){
-			times = times + timesOfN(i);
-		}
-	}
-}

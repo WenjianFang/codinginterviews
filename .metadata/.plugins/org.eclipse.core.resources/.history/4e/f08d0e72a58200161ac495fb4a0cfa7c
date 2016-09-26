@@ -1,0 +1,25 @@
+/*
+ * judge if there exist a circle in a list
+ * get the circle length
+ * get entry
+ */
+public class Solution {
+	public ListNode createList(int[] array){
+		if(array.length==0) return null;
+		ListNode head = new ListNode(array[0]);
+		ListNode p = head;
+		for(int i=1; i<array.length; i++){
+			ListNode newNode = new ListNode(array[i]);
+			newNode = null;
+			p.next = newNode;
+			p = newNode;
+		}
+		return head;
+	}
+	public boolean isThereExistCircle(ListNode head){
+		if(head == null) return false;
+		if(head.next==null) return false;
+		
+		
+	}
+}

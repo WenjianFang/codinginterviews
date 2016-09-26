@@ -1,0 +1,78 @@
+/*
+ * judge if there exist a circle in a list
+ * get the circle length
+ * get entry
+ */
+public class Solution {
+	public ListNode createList(int[] array){
+		if(array.length==0) return null;
+		ListNode head = new ListNode(array[0]);
+		ListNode p = head;
+		for(int i=1; i<array.length; i++){
+			ListNode newNode = new ListNode(array[i]);
+			newNode.next = null;
+			p.next = newNode;
+			p = newNode;
+		}
+		p.next = head.next;
+		return head;
+	}
+	/**
+	 * 
+	 * @param head: list head
+	 * @return ListNode type, return the node that first and second pointer meet
+	 * the return node is in the circle
+	 * null if there are no circle
+	 */
+	public ListNode isThereExistCircle(ListNode head){
+		if(head == null) return null;
+		if(head.next==null) return null;
+		
+		ListNode firstPointer = head.next;
+		ListNode secondPointer = head.next.next;
+		
+		while(firstPointer != secondPointer){/*if first and second pointer meet, exist circle*/
+			if(secondPointer == null||secondPointer.next==null) return null;/*null, no circle*/
+			firstPointer = firstPointer.next;/*first pointer move one step*/
+			secondPointer = secondPointer.next.next;/*second pointer move two step*/
+		}
+		return firstPointer;/*return one node on the circle*/
+	}
+	
+	/**
+	 * use the isThereExistCircle judge the circle, and get one node on the circle
+	 * use a new pointer to start from current node, when they first meet, we can get
+	 * length of circle
+	 * @param head:list head
+	 * @return length of circle
+	 */
+	public int getCircleLength(ListNode head){
+		ListNode p = isThereExistCircle(head);
+		int count;
+		if(p==null) return 0;
+		else{
+			ListNode tmp = p.next;
+			count = 1;
+			while(tmp != p){
+				count++;
+				tmp = tmp.next;
+			}
+		}
+		return count;
+	}
+
+	public ListNode getEntryNodeOfCircle(ListNode head){
+		int length = getCircleLength(head);
+		if(length==0) return null;
+		ListNode firstPointer = head;
+		for(int i=0; i<length; i++){
+			firstPointer = firstPointer.next;
+		}
+		ListNode secondPointer = head;
+		while(secondPointer != firstPointer){
+			firstPointer = firstPointer.next;
+			secondPointer = secondPointer.next;
+		}
+		return secondPointer;
+	}
+}
