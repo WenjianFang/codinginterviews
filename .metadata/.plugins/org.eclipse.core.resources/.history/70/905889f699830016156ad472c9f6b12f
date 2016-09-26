@@ -2,7 +2,7 @@
 public class Solution {
 	
 	public String reverseLeftString(String str, int n){
-		if(str.equals("")||n<=0||n>str.length()) return "";/*illegal n or str is null*/
+		if(str.equals("")||n>str.length()) return "";/*illegal n or str is null*/
 		
 		StringBuffer sb = new StringBuffer(str);
 		
