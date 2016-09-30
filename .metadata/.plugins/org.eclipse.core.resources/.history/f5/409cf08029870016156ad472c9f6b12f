@@ -1,0 +1,15 @@
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer originStr = new StringBuffer("");
+		char[] specifyChars = {'a','e','i','o','u'};
+		new Solution().deleteSpecifyChar(originStr, specifyChars);
+		System.out.println(originStr);
+	}
+
+}

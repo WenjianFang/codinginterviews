@@ -1,0 +1,14 @@
+/*delete specify chars
+ * use two pointer, first point to the position that should be override
+ * second move on
+ */
+public class Solution {
+	public void deleteSpecifyChar(StringBuffer originStr, char[] specifyChars){
+		
+		boolean[] chTable = new boolean[256];
+		for(int i=0; i<specifyChars.length; i++){
+			chTable[specifyChars[i]-'0']=true;
+		}
+		
+	}
+}
