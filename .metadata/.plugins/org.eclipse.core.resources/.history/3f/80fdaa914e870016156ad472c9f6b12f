@@ -1,0 +1,14 @@
+
+public class Solution {
+	public int getMaxSatisfaction(int[] Si, int[][] matrix){
+		int maxSum = 0;
+		for(int i=0; i<matrix.length; i++){
+			int currentSum = 0;
+			for(int j=0; j<Si.length; j++){
+				currentSum += Si[j]*matrix[i][j];
+			}
+			if(maxSum < currentSum) maxSum = currentSum;
+		}
+	}
+	return maxSum;
+}

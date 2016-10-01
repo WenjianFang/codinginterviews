@@ -1,0 +1,17 @@
+import java.util.*;
+public class Solution {
+	public void reverseStack(Stack<Integer> stack){
+		if(stack.empty()||stack.size()==1) return;
+		int top = stack.pop();
+		reverseStack(stack);
+		addToStackBottom(stack, top);
+	}
+	private void addToStackBottom(Stack<Integer> stack, int top){
+		if(stack.empty()) stack.push(top);
+		else{
+			int t = stack.pop();
+			addToStackBottom(stack, top);
+			stack.push(t);
+		}
+	}
+}
